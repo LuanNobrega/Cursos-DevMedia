@@ -1,0 +1,95 @@
+REACT JS
+
+1. Introdução:
+Reutilizar códigos acelera o processo de desenvolvimento de uma página já que o programador escreve menos código.
+
+2. Conhecendo o React JS:
+Através do React JS você aplica os conceitos de HTML, CSS e JavaScript que já viu até agora para criar aplicações front-end.
+
+3. Preparando o ambiente:
+Todo sistema operacional - Windows, Linux, Mac etc. - possui um terminal e um navegador, por isso, não é necessário fazer a sua instalação.
+
+4. Criando minha primeira aplicação:
+Criando uma aplicação React JS
+Veja no Código 2 o comando usado para criar uma aplicação React JS.
+
+npx create-react-app minha-pagina
+
+Sempre que precisar criar uma aplicação React utilize o mesmo comando 'npx create-react-app'. A única palavra que muda é o nome da aplicação que é inserida no final deste comando.
+Veja no Código 3 o comando usado para que o Node inicie um servidor web local.
+
+npm start
+
+5. Hello World:
+function App() {
+ return (
+  <div className="container">
+   <h1>Hello world</h1>
+  </div>
+ );
+}
+
+export default App;
+
+No React JS, exibir o conteúdo na tela significa criar uma função que retorna elementos HTML. Essa função é chamada de componente.
+function App() {
+ return (
+  <header>
+   <h1>Motorola</h1>
+
+   <a href="index.html">
+    <img src="assets/logo.png" alt="Motorola" title="Motorola"/>
+   </a>
+  </header>
+ );
+}
+
+export default App;
+
+6. Estilizando a página:
+Neste exemplo utilizamos o arquivo App.css, porém podemos criar qualquer arquivo .css para inserir os elementos da página, basta importá-lo no arquivo App.js.
+EXEMPLO:
+
+App.js:
+
+import './App.css';
+
+function App() {
+ return (
+  <div>
+   <h1>Hello world</h1>
+   <p>Com React JS</p>
+   <p className="autor">Criado por Mateus Correa</p>
+  </div>
+ );
+}
+
+export default App;
+
+App.css:
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    color: gray;
+    font-size: 22px;
+}
+
+.autor {
+    font-style: italic;
+    text-decoration: underline;
+
+}
+

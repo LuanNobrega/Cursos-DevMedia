@@ -1,0 +1,59 @@
+.topo{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 22px;
+    background-color: #4710c1;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.topo div{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0px 150px;
+}
+
+.link_topo{
+    background-color: #ffffff;
+    margin-left: 50px;
+    padding: 5px 15px;
+    border-radius: 30px;    
+}
+
+.sinopse{
+    text-align: center;
+    margin: 20px 80px;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.sinopse p{
+    text-align: justify;
+    font-size: 22px;
+}
+
+.imagem{
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.galeria{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.imagem_galeria{
+    width: 300px;
+    height: 200px;
+    padding: 0 10px;
+}
+
+.rodape{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #4710c1;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5px 0;
+}
